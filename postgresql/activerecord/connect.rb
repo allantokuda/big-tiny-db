@@ -1,5 +1,6 @@
 require 'yaml'
 require 'active_record'
+require 'pry'
 
 config = YAML.load_file('database.yml')
 ActiveRecord::Base.establish_connection(config)
