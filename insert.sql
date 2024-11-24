@@ -1,0 +1,50 @@
+insert into creature (c_id, c_name, c_type, reside_t_id) values (1, 'Bannon', 'Person', 'p');
+insert into creature (c_id, c_name, c_type, reside_t_id) values (2, 'Myers', 'Person', 'a');
+insert into creature (c_id, c_name, c_type, reside_t_id) values (3, 'Neff', 'Person', 'b');
+insert into creature (c_id, c_name, c_type, reside_t_id) values (4, 'Neff', 'Person', 'c');
+insert into creature (c_id, c_name, c_type, reside_t_id) values (5, 'Mieska', 'Person', 'd');
+insert into creature (c_id, c_name, c_type, reside_t_id) values (6, 'Carlis', 'Person', 'p');
+insert into creature (c_id, c_name, c_type, reside_t_id) values (7, 'Kermit', 'Frog', 'h');
+insert into creature (c_id, c_name, c_type, reside_t_id) values (8, 'Godzilla', 'Monster', 't');
+
+insert into skill (s_code, s_desc, origin_t_id) values ('A', 'Float', 'b');
+insert into skill (s_code, s_desc, origin_t_id) values ('E', 'Swim', 'b');
+insert into skill (s_code, s_desc, origin_t_id) values ('O', 'Sink', 't');
+insert into skill (s_code, s_desc, origin_t_id) values ('U', 'Walk on Water', 'em');
+insert into skill (s_code, s_desc, origin_t_id) values ('Z', 'Gargle', 'p');
+
+insert into achievement (c_id, s_code, score, test_t_id) values (1, 'A', 1, 'a');
+insert into achievement (c_id, s_code, score, test_t_id) values (1, 'E', 3, 'a');
+insert into achievement (c_id, s_code, score, test_t_id) values (1, 'Z', 3, 'p');
+insert into achievement (c_id, s_code, score, test_t_id) values (2, 'A', 3, 'b');
+insert into achievement (c_id, s_code, score, test_t_id) values (3, 'A', 2, 'b');
+insert into achievement (c_id, s_code, score, test_t_id) values (3, 'Z', 1, 'p');
+insert into achievement (c_id, s_code, score, test_t_id) values (4, 'A', 2, 'c');
+insert into achievement (c_id, s_code, score, test_t_id) values (4, 'E', 2, 'c');
+insert into achievement (c_id, s_code, score, test_t_id) values (5, 'Z', 3, 'd');
+insert into achievement (c_id, s_code, score, test_t_id) values (7, 'E', 1, 's');
+insert into achievement (c_id, s_code, score, test_t_id) values (8, 'O', 1, 't');
+
+insert into aspiration (c_id, s_code, score, test_t_id) values (1, 'A', 1, 'a');
+insert into aspiration (c_id, s_code, score, test_t_id) values (1, 'E', 3, 'a');
+insert into aspiration (c_id, s_code, score, test_t_id) values (1, 'Z', 1, 'be');
+insert into aspiration (c_id, s_code, score, test_t_id) values (2, 'A', 3, NULL);
+insert into aspiration (c_id, s_code, score, test_t_id) values (3, 'A', 2, 'b');
+insert into aspiration (c_id, s_code, score, test_t_id) values (3, 'Z', 2, 'be');
+insert into aspiration (c_id, s_code, score, test_t_id) values (4, 'E', 2, 'c');
+insert into aspiration (c_id, s_code, score, test_t_id) values (5, 'Z', 3, 'd');
+insert into aspiration (c_id, s_code, score, test_t_id) values (6, 'Z', 3, 'e');
+insert into aspiration (c_id, s_code, score, test_t_id) values (7, 'E', 3, 's');
+insert into aspiration (c_id, s_code, score, test_t_id) values (8, 'O', 1, 't');
+
+insert into town (t_id, t_name, biggest_rival_t_id, mayor_c_id) values ('a', 'Anoka', 'be', 2);
+insert into town (t_id, t_name, biggest_rival_t_id) values ('b', 'Bemidji', 'd');
+insert into town (t_id, t_name, biggest_rival_t_id) values ('be', 'Blue Earth', 'c');
+insert into town (t_id, t_name, biggest_rival_t_id) values ('c', 'Chaska', 'a');
+insert into town (t_id, t_name, biggest_rival_t_id) values ('d', 'Duluth', 'b');
+insert into town (t_id, t_name, biggest_rival_t_id) values ('e', 'Edina', 'h');
+insert into town (t_id, t_name, biggest_rival_t_id) values ('em', 'Embarrass', NULL);
+insert into town (t_id, t_name, biggest_rival_t_id) values ('h', 'Hollywood', 'p');
+insert into town (t_id, t_name, biggest_rival_t_id) values ('p', 'Philly', 'd');
+insert into town (t_id, t_name, biggest_rival_t_id) values ('s', 'Swampville', NULL);
+insert into town (t_id, t_name, biggest_rival_t_id) values ('t', 'Tokyo', NULL);
