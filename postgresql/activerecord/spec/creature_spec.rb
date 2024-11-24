@@ -1,6 +1,6 @@
 require_relative '../connect.rb'
 
-describe 'Creature' do
+describe Creature do
   it 'can have many achievements' do
     creature = Creature.find(1)
     expect(creature.achievements.map(&:s_code)).to eq(%w[A E Z])
