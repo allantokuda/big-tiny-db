@@ -37,8 +37,8 @@ create table aspiration (
 drop table if exists town;
 create table town (
   t_id varchar(3),
-  t_name varchar(15),
+  t_name varchar(24),
   mayor_c_id int,
-  biggest_rival_t_id varchar(2),
+  biggest_rival_t_id varchar(4),
   primary key (t_id)
 );
