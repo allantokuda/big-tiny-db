@@ -11,7 +11,7 @@ create table creature (
 drop table if exists skill;
 create table skill (
   s_code varchar(3),
-  s_desc varchar(15),
+  s_desc varchar(40),
   origin_t_id varchar(3),
   primary key (s_code)
 );
