@@ -102,4 +102,4 @@ insert into town (t_id, t_name) values
 (980,'Samut Sakhon'), (981,'Likasi'), (982,'Beira'), (983,'Hamadan'), (984,'Shuozhou'), (985,'Tonghua'), (986,'Djibouti'), (987,'Essen'), (988,'Toulon'), (989,'Dresden'),
 (990,'Juiz De Fora'), (991,'Bouake'), (992,'Pereira'), (993,'Udaipur'), (994,'Sanmenxia'), (995,'Vellore'), (996,'Dongyang'), (997,'Ardabil'), (998,'Thoothukkudi'), (999,'Bloemfontein');
 
-update town set mayor_c_id = case when t_id ~ '^[0-9]+$' then t_id::int + 1000 else null end;
+update town set mayor_c_id = case when t_id ~ '^[0-9]+$' then t_id::int + 1000 else null end where mayor_c_id is null;
