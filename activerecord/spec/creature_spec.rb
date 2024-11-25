@@ -12,4 +12,10 @@ describe Creature do
     expect(creature.name).to eq('Carlis')
     expect(creature.achievements.count).to eq(0)
   end
+
+  it 'can be mayor of a town' do
+    creature = Creature.find(2)
+    expect(creature.name).to eq('Myers')
+    expect(creature.mayor_town.name).to eq('Anoka')
+  end
 end
