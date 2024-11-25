@@ -28,6 +28,8 @@ GEM
     connection_pool (2.4.1)
     diff-lcs (1.5.1)
     drb (2.2.1)
+    faker (3.5.1)
+      i18n (>= 1.8.11, < 2)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     logger (1.6.1)
@@ -63,6 +65,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  faker
   pg
   pry
   rspec

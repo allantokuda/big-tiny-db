@@ -1,11 +1,14 @@
+drop table if exists creature;
 create table creature (
   c_id int,
   c_name varchar(30),
   c_type varchar(20),
   reside_t_id varchar(3),
+  boss_c_id int,
   primary key (c_id)
 );
 
+drop table if exists skill;
 create table skill (
   s_code varchar(3),
   s_desc varchar(15),
@@ -13,6 +16,7 @@ create table skill (
   primary key (s_code)
 );
 
+drop table if exists achievement;
 create table achievement (
   c_id int,
   s_code varchar(3),
@@ -21,6 +25,7 @@ create table achievement (
   primary key (c_id, s_code)
 );
 
+drop table if exists aspiration;
 create table aspiration (
   c_id int,
   s_code varchar(3),
@@ -29,6 +34,7 @@ create table aspiration (
   primary key (c_id, s_code)
 );
 
+drop table if exists town;
 create table town (
   t_id varchar(3),
   t_name varchar(15),
