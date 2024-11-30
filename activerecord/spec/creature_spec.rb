@@ -34,4 +34,9 @@ describe Creature do
     expect(creature.bossed_creatures.map(&:name)).to eq(%w[Neff])
     expect(creature.bossed_creatures.flat_map(&:bossed_creatures).map(&:name).sort).to eq(%w[Carlis Mieska])
   end
+
+  it 'has achieved skills' do
+    creature = Creature.find(1)
+    expect(creature.achieved_skills.map(&:s_desc).sort).to eq(%w[Float Gargle Swim])
+  end
 end
