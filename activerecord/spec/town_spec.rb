@@ -6,4 +6,10 @@ describe Town do
     expect(town.name).to eq('Anoka')
     expect(town.mayor.name).to eq('Myers')
   end
+
+  it 'has residents' do
+    town = Town.find('p')
+    expect(town.name).to eq('Philly')
+    expect(town.residents.map(&:name).sort).to eq(%w[Bannon Carlis])
+  end
 end

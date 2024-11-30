@@ -39,4 +39,10 @@ describe Creature do
     creature = Creature.find(1)
     expect(creature.achieved_skills.map(&:s_desc).sort).to eq(%w[Float Gargle Swim])
   end
+
+  it 'belongs to a reside town' do
+    creature = Creature.find(2)
+    expect(creature.name).to eq('Myers')
+    expect(creature.reside_town.name).to eq('Anoka')
+  end
 end
