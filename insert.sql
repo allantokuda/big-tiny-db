@@ -1,11 +1,11 @@
-insert into creature (c_id, c_name, c_type, reside_t_id) values (1, 'Bannon', 'Person', 'p');
-insert into creature (c_id, c_name, c_type, reside_t_id) values (2, 'Myers', 'Person', 'a');
-insert into creature (c_id, c_name, c_type, reside_t_id) values (3, 'Neff', 'Person', 'b');
-insert into creature (c_id, c_name, c_type, reside_t_id) values (4, 'Neff', 'Person', 'c');
-insert into creature (c_id, c_name, c_type, reside_t_id) values (5, 'Mieska', 'Person', 'd');
-insert into creature (c_id, c_name, c_type, reside_t_id) values (6, 'Carlis', 'Person', 'p');
-insert into creature (c_id, c_name, c_type, reside_t_id) values (7, 'Kermit', 'Frog', 'h');
-insert into creature (c_id, c_name, c_type, reside_t_id) values (8, 'Godzilla', 'Monster', 't');
+insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (1, 'Bannon', 'Person', 'p', 6);
+insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (2, 'Myers', 'Person', 'a', 6);
+insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (3, 'Neff', 'Person', 'b', 6);
+insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (4, 'Neff', 'Person', 'c', 7);
+insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (5, 'Mieska', 'Person', 'd', 4);
+insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (6, 'Carlis', 'Person', 'p', 4);
+insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (7, 'Kermit', 'Frog', 'h', NULL);
+insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (8, 'Godzilla', 'Monster', 't', NULL);
 
 insert into skill (s_code, s_desc, origin_t_id) values ('A', 'Float', 'b');
 insert into skill (s_code, s_desc, origin_t_id) values ('E', 'Swim', 'b');
