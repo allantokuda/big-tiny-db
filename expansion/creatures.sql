@@ -13,3 +13,4 @@ alter table creature alter column c_type set default 'Person';
 insert into creature (c_name) select first_names.name || ' ' || last_names.name from first_names, last_names order by random() limit 1000000;
 
 update creature set boss_c_id = (c_id/10.0)::int where boss_c_id is null;
+update creature set reside_t_id = ((random()*998)::int+1)::varchar where reside_t_id is null;
