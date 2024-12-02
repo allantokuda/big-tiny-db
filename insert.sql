@@ -1,3 +1,4 @@
+alter table creature alter column c_id drop identity;
 insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (1, 'Bannon', 'Person', 'p', 6);
 insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (2, 'Myers', 'Person', 'a', 6);
 insert into creature (c_id, c_name, c_type, reside_t_id, boss_c_id) values (3, 'Neff', 'Person', 'b', 6);
