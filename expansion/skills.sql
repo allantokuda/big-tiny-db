@@ -99,3 +99,5 @@ insert into skill (s_code, s_desc) values
 ('DU', 'Split into smaller water clones'),
 ('DV', 'Harness lightning through water'),
 ('DW', 'Transform water into steam to escape');
+
+update skill set origin_t_id = ascii(substring(s_code, 2, 1)) - 63 where length(s_code) = 2;
