@@ -12,4 +12,10 @@ describe Town do
     expect(town.name).to eq('Philly')
     expect(town.residents.map(&:name).sort).to eq(%w[Bannon Carlis])
   end
+
+  it 'is origin for skills' do
+    town = Town.find('b')
+    expect(town.name).to eq('Bemidji')
+    expect(town.origin_skills.map(&:description).sort).to eq(%w[Float Swim])
+  end
 end

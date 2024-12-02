@@ -17,4 +17,9 @@ describe Skill do
     skill = Skill.find('A')
     expect(skill.achieving_creatures.map(&:c_id).sort).to eq([1, 2, 3, 4])
   end
+
+  it 'has an origin town' do
+    skill = Skill.find('A')
+    expect(skill.origin_town.name).to eq('Bemidji')
+  end
 end
