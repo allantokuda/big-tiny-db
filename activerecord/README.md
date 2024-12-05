@@ -13,7 +13,11 @@ This directory contains a Rails-based Object-Relational Mapping (ORM) for doing 
 
       cp database.yml.example database.yml
 
-- To use the ORM, start `irb`, run the connect script, and then you can do lots of things:
+- To use the ORM:
+   - Starting within the `activerecord` directory,
+   - Run `irb` (interactive Ruby)
+   - Within irb, `require ./connect`
+   - Then you can do lots of things with the defined models!
 
 ```ruby
       irb(main):001:0> require './connect'
