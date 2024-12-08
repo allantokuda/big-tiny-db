@@ -15,3 +15,9 @@ insert into creature (c_name) select first_names.name || ' ' || last_names.name 
 update creature set boss_c_id = (c_id/10.0)::int where c_id > 100 and boss_c_id is null;
 
 update creature set reside_t_id = ((random()*998)::int+1)::varchar where reside_t_id is null;
+
+alter table creature add column payload varchar(256);
+create or replace function random_string(int) returns text as $$
+select array_to_string(array(select substr('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',((random()*(36-1)+1)::integer),1) from generate_series(1,$1)),'')
+$$ language sql;
+update creature set payload = random_string(255);
